@@ -4,14 +4,14 @@ window.addEventListener('scroll', function () {
     let pos = window.scrollY;
     let inner = window.innerHeight / 3;
     if (pos >= inner) {
-        pos = inner;  
-        if (window.scrollY <= (inner) + 150) {
+        pos = inner;
+        if (window.scrollY >= (inner) - 100) {
             window.scrollTo({
                 top: inner,
                 behavior: 'smooth'
-            }); 
+            });
         }
-        
+
     }
     document.getElementById('fol').style.transform = 'translateY(' + -(pos * 2) + 'px)';
 });

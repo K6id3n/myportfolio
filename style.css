@@ -14,7 +14,8 @@
 
 body {
     background-color: black;
-
+    height: 150%;
+    overflow-y: auto;
 }
 
 .mid {
@@ -34,6 +35,10 @@ body {
     flex-direction: column;
 }
 
+.shad {
+    text-shadow: 2px 2px 16px rgba(0, 0, 0, 0.5);
+}
+
 /* body */
 .open {
     display: flex;
@@ -50,7 +55,6 @@ body {
 
 .follower {
     margin-top: 100dvh;
-    height: 200dvh;
     background-color: rgba(191, 183, 175, 1);
 }
 
@@ -61,6 +65,10 @@ body {
     text-shadow: 2px 2px 16px rgba(0, 0, 0, 0.5);
 }
 
+.titlewrapdos {
+    background-color: rgba(242, 233, 225, 1);
+}
+
 .title {
     width: 100%;
     height: fit-content;
@@ -69,45 +77,28 @@ body {
     font-style: normal;
     font-size: 21dvw;
     text-align: center;
-    background-color: rgba(242, 233, 225, 1);
-    color: rgba(64, 64, 64, 1);
-    text-shadow: 2px 2px 16px rgba(0, 0, 0, 0.5);
+    background: url(imgs/desert.png) no-repeat fixed; 
+    background-size: cover;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
+
 #fol {
-    transition: transform 0.1s; 
+    transition: transform 0.3s ease-out; 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#msgCont {
-    display: flex;
-    align-items: center;
-    width: fit-content;
+#msg {
+    width: 100%;
+    height: 35dvh;
 }
 
-#frmRow {
-    display: flex;
-    align-items: center;
-}
-
-#msgBut {
-    font-size: 20px;
-    margin-top: 6dvw;
-    background-color: rgba(242, 233, 225, 1);
-    width: fit-content;  
-    border: 3px solid rgba(176, 165, 153, 1);
-    color: rgba(64, 64, 64, 1);
-    border-radius: 20px;
-    padding-left: .6dvw;
-    padding-right: .6dvw;
-}
-
-.msgText{
-    margin: 1dvw;
-    margin-left: auto;
-    margin-right: auto;
+nav {
+    display: flex; 
+    justify-content: space-between;
 }
 
 @media (max-width: 1000px) {
