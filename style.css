@@ -55,32 +55,32 @@ body {
 
 .follower {
     margin-top: 100dvh;
-    background-color: rgba(191, 183, 175, 1);
+    background-color: rgba(242, 233, 225, 1)
 }
 
 .titlewrap {
     background-color: rgba(71, 71, 71, 1);
     width: 100%;
     padding-top: 2dvw;
-    text-shadow: 2px 2px 16px rgba(0, 0, 0, 0.5);
 }
 
 .titlewrapdos {
-    background-color: rgba(242, 233, 225, 1);
+    background-color:  rgb(153, 102, 58);
 }
 
 .title {
-    width: 100%;
-    height: fit-content;
     font-family: "Karantina", system-ui;
     font-weight: 300;
     font-style: normal;
     font-size: 21dvw;
     text-align: center;
-    background: url(imgs/desert.png) no-repeat fixed; 
-    background-size: cover;
-    -webkit-background-clip: text;
     color: transparent;
+    overflow-y: scroll; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    background-image: url('imgs/desert.png');
+    background-attachment: scroll; /* Set background attachment to scroll */
+    background-size: cover;
+    background-clip: text;
 }
 
 

@@ -5,7 +5,7 @@ window.addEventListener('scroll', function () {
     let inner = window.innerHeight / 3;
     if (pos >= inner) {
         pos = inner;
-        if (window.scrollY >= (inner) - 100) {
+        if (window.scrollY >= (inner)) {
             window.scrollTo({
                 top: inner,
                 behavior: 'smooth'
