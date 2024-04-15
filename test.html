@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Grid Example</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="myCanvas" ></canvas>
+
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext('2d');
+        var squareSize = 5;
+        var rows = 20;
+        var cols = 200;
+    
+        // Generate random row and column indices
+        var randomRow = Math.floor(Math.random() * rows);
+        var randomCol = Math.floor(Math.random() * cols);
+    
+        for (let row = 0; row < rows; row++) {
+            for (let col = 0; col < cols; col++) {
+                let x = col * squareSize;
+                let y = row * squareSize;
+                let color = 'black';
+                ctx.fillStyle = color;
+                ctx.fillRect(x, y, squareSize, squareSize);
+            }
+        }
+        for (let row = 0; row < rows; row++) {
+            for (let col = 0; col < cols; col++) {
+                
+            }
+        }
+    </script>
+    
+    
+</body>
+
+
+</html>
