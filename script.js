@@ -4,10 +4,10 @@ window.addEventListener('scroll', function () {
     document.getElementById('fol').style.marginTop = (100 - (window.scrollY / (window.innerHeight / 100))) + 'dvh';
     document.querySelector('.title').style.backgroundPositionY = (window.scrollY * 0.2) + 'px'; 
 });
-document.addEventListener('mousemove', function(e) {
-    var cursor = document.getElementById('cur');
-    setTimeout(function() {
-        cursor.style.left = (e.pageX - 10) + 'px'; 
-        cursor.style.top = (e.pageY - 10) + 'px';  
-    }, 200)
-});
+// document.addEventListener('mousemove', function(e) {
+//     var cursor = document.getElementById('cur');
+//     setTimeout(function() {
+//         cursor.style.left = (e.pageX - 10) + 'px'; 
+//         cursor.style.top = (e.pageY - 10) + 'px';  
+//     }, 100)
+// });
