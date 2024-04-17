@@ -10,7 +10,6 @@
 * {
     margin: 0%;
     box-sizing: border-box;   
-        /* cursor: none; */
 }
 
 body {
@@ -123,8 +122,8 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-left: 5dvw;
-    margin-right: 5dvw;
+    margin-left: 3dvw;
+    margin-right: 3dvw;
     font-family: "Karantina", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -132,14 +131,13 @@ nav {
     font-size: 30px;
 }
 
-nav a {
-    text-align: center;    
-    background-image: url(imgs/image\ \(4\).png);
+nav a {    
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    text-align: center;    
     border-radius: 15px;
-    font-size: 40px;
+    font-size: 30px;
     color: rgba(71, 71, 71, 1);
     text-decoration: none;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
@@ -147,22 +145,30 @@ nav a {
 }
 
 nav a p {
+    display: flex; 
+    justify-content: center;
+    width: 10dvw;
+    display: flex;
+    align-items: center;
     background-color: rgba(242, 233, 225, 1);
     border: 5px solid rgba(191, 183, 175, 1)  ;
     border-radius: 12px;
     padding: .3dvw;
     padding-left: 1dvw;
     padding-right: 1dvw;
-    transition: background-color .5s ease-in-out;
+    height: 50px;
+    transition: all 2s;
 }
 
 nav a:hover {
-    transform: translateY(-0.4vw);
+    transform: translateY(-1dvw);
     transition: transform 1s;
+
 }
 
-nav a:hover p {
-    transition:  background-color 1s ease-in-out;
+nav a:hover p {    
+    height: 10dvw;
+    transition: all 2s;
     background-color: rgba(0, 0, 0, 0);   
 }
 
@@ -173,10 +179,11 @@ body::-webkit-scrollbar {
 
 
 
-@media (max-width: 700px) {
+@media (max-width: 1200px) {
     nav a {
         width: 50dvw;
-        padding: 1dvw;
+        background-image: none;
+        font-size: 2dvw;
     }
     nav {
         flex-direction: column;
