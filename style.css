@@ -168,7 +168,8 @@ nav a:hover {
 
 nav a:hover p {    
     height: 10dvw;
-    transition: all 2s;
+    transition: all 1.5s;
+    color: rgba(255, 255, 255, 0);
     background-color: rgba(0, 0, 0, 0);   
 }
 
@@ -181,9 +182,12 @@ body::-webkit-scrollbar {
 
 @media (max-width: 1200px) {
     nav a {
-        width: 50dvw;
+
         background-image: none;
-        font-size: 2dvw;
+        font-size: 40px;
+    }
+    nav a p {
+        width: 50dvw;
     }
     nav {
         flex-direction: column;
