@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 200dvh;
 }
 /* nav */
 
@@ -13,8 +14,17 @@ body {
     display: none;
 }
 
+.navline {
+    position: fixed;
+    width: 100dvw;
+    height: .2dvw;
+    margin-top: 1.7dvw;
+    background-color: white;
+}
+
 nav {
-    position: absolute;
+    margin-top: .2dvw;
+    position: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,14 +87,14 @@ nav {
     width: .3dvw;
     height: 0dvw;
     background-color: rgb(255, 255, 255);  
-    transition: all 2s
+    transition: all 1s
 }
 
 .con {
     background-color: rgb(255, 255, 255);  
     width: .3dvw;
     height: 2.5dvw;
-    transition: all 2s;
+    transition: all 1s;
 }
 
 .navcontbefore {  

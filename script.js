@@ -27,8 +27,8 @@ function navActive() {
                     link.classList.toggle('gn');
                 });
                 navbut.onclick = navActive;
-            }, 1000);
-        }, 1000);
+            }, 500);
+        }, 500);
         active = false;
     } else {
         document.getElementById('ln1').classList.toggle('topmv');
