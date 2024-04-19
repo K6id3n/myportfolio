@@ -26,7 +26,9 @@ function navActive() {
                 document.querySelectorAll('.navlink').forEach(link => {
                     link.classList.toggle('gn');
                 });
-                navbut.onclick = navActive;
+                setTimeout(() => {
+                    navbut.onclick = navActive;
+                }, 1000);
             }, 500);
         }, 500);
         active = false;
@@ -44,7 +46,9 @@ function navActive() {
 
             setTimeout(() => {
                 document.querySelector('.conbefore').classList.toggle('con');
-                navbut.onclick = navActive;
+                setTimeout(() => {
+                    navbut.onclick = navActive;
+                }, 1000);
             }, 500);
         }, 1000);
         active = true;
