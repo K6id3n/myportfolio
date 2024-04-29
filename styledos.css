@@ -1,4 +1,6 @@
 
+
+
 body {
     margin: 0px;
     box-sizing: border-box; 
@@ -37,6 +39,8 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    z-index: 99999;
 }
 
 .navbut {
@@ -102,7 +106,7 @@ nav {
     background-color: rgb(255, 255, 255);  
     width: .1dvw;
     height: 2.5dvw;
-    transition: all 1s;
+    transition: all .8s ease;
 }
 
 .navcontbefore {  
@@ -126,7 +130,7 @@ nav {
 
 .navcont {
     height: 25dvw;
-    background-color: rgba(0, 0, 0, 0.541);
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 .navlink {
@@ -279,4 +283,50 @@ header {
     margin-left: 4dvw;
     margin-left: 4dvw;
     font-size: 1.2dvw;
+}
+
+/*  shapes */
+
+.shaptest {
+    width: 10dvw;
+    height: 10dvw;
+    background-color: rgba(255, 255, 255, 0);
+    border: .1dvw solid rgb(255, 255, 255);
+    border-radius: 50%;
+    overflow: hidden;
+    margin-inline: 5dvw;
+}
+
+.shapeline {
+    position: absolute;
+    width: 10.1dvw;
+    height: .1dvw;
+    translate: 0px 5dvw;
+    transform: rotate(-45deg);
+    background-color: white;
+}
+
+.shaptestdos {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10dvw;
+    height: 10dvw;
+}
+
+.shapelinex {
+    width: 13.16dvw;
+    height: .1dvw;
+    background-color: white;
+}
+
+.linedos {
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+.lineuno {
+    position: absolute;
+    transform: rotate(45deg);
 }
