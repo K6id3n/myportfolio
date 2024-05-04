@@ -9,7 +9,7 @@
 
 * {
     margin: 0%;
-    box-sizing: border-box;   
+    box-sizing: border-box;
 }
 
 body {
@@ -22,12 +22,12 @@ body {
     margin-right: auto;
 }
 
-.rale{
+.rale {
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-  }
+}
 
 .column {
     display: flex;
@@ -46,10 +46,10 @@ body {
     position: absolute;
     width: 20px;
     height: 20px;
-    background-color:rgba(71, 71, 71, 1);
-    border-radius: 50%; 
-    pointer-events: none; 
-    z-index: 9999; 
+    background-color: rgba(71, 71, 71, 1);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
 }
 
 /* body */
@@ -61,6 +61,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 10dvw;
     transform: translate(-50%, -50%);
     color: white;
     font-size: 18px;
@@ -79,8 +80,8 @@ body {
 }
 
 .titlewrapdos {
-   background-color: rgba(242, 233, 225, 1);
-   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    background-color: rgba(242, 233, 225, 1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 .title {
@@ -95,7 +96,7 @@ body {
     background-size: cover;
     background-clip: text;
     transition: text-shadow 1s;
-    z-index: 100000; 
+    z-index: 100000;
 }
 
 .title:hover {
@@ -117,7 +118,7 @@ body {
 }
 
 nav {
-    display: flex; 
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -130,11 +131,11 @@ nav {
     font-size: 30px;
 }
 
-nav a {    
+nav a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    text-align: center;    
+    text-align: center;
     border-radius: 15px;
     font-size: 30px;
     color: rgba(71, 71, 71, 1);
@@ -144,7 +145,7 @@ nav a {
 }
 
 nav a p {
-    display: flex; 
+    display: flex;
     justify-content: center;
     width: 10dvw;
     display: flex;
@@ -164,11 +165,11 @@ nav a:hover {
     transition: transform 1s;
 }
 
-nav a:hover p {    
+nav a:hover p {
     height: 10dvw;
     transition: all 1.5s;
     color: rgba(255, 255, 255, 0);
-    background-color: rgba(0, 0, 0, 0);   
+    background-color: rgba(0, 0, 0, 0);
 }
 
 
@@ -184,13 +185,15 @@ body::-webkit-scrollbar {
         background-image: none;
         font-size: 40px;
     }
+
     nav a p {
         width: 50dvw;
     }
+
     nav {
         flex-direction: column;
         height: 100%;
         padding-top: 1dvw;
         padding-bottom: 1dvw;
     }
-  }
+}
