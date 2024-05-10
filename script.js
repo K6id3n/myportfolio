@@ -54,4 +54,3 @@ function navActive() {
         active = true;
     }
 }
-
