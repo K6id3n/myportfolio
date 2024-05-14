@@ -533,19 +533,21 @@
             margin-top: 30dvw;
             width: 100px;
             height: 100px;
-            position: relative;
             transform-style: preserve-3d;
+            /* transform: translateZ(100px) rotateX(120deg) rotateZ(-135deg); */
+            transform: rotateX(-20deg) rotateY(45deg);
         }
 
         .side {
+            background-image: url(grass-texture\ 3.png);
             display: flex;
             align-items: center;
             justify-content: center;
             position: absolute;
             width: 100px;
             height: 100px;
-            background-color: rgba(0, 0, 0, 0.599);
-            border: 1px solid #ffffff;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
         .front {
@@ -569,19 +571,19 @@
         .top {
             transform: rotateX(90deg) translateY(-50px);
             transform-origin: top center;
+            background-image: url(grass-texture\ 2.png);
         }
 
         .bottom {
             transform: rotateX(-90deg) translateY(50px);
             transform-origin: bottom center;
+            background-image: url(grass-texture\ 4.png);
         }
 
         .cube:hover {
-            transition: all 2s ease;
-            transform: translateZ(-100px) rotateX(-120deg) rotateZ(135deg);
+            transition: all 4s ease;
+            transform: rotateX(-760deg) rotateY(405deg);
         }
-
-    
     </style>
     <div class="cube">
         <div class="side front"></div>
@@ -591,7 +593,50 @@
         <div class="side top"></div>
         <div class="side bottom"></div>
     </div>
+    <style>
+        .prism {
+            transform-style: preserve-3d;
+            margin-top: 10dvw
+        }
 
+        .t-side {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-left: 5dvw  solid transparent;
+            border-right: 5dvw solid transparent;
+            border-bottom: 10dvw  solid rgb(255, 255, 255); 
+            position: absolute;
+        }
+
+        .one {
+            transform: rotateY(405deg);
+            color: red;
+        }
+        .two {
+            color: green;
+        }
+        .three {
+            color: blue;
+        }
+        .four {
+            color: purple;
+        }
+
+        .base {
+            width: 10dvw;
+            height: 10dvw;
+            background-color: white;
+        }
+    </style>
+    <div class="prism">
+        <div class="t-side one">SIDE</div>
+    <div class="t-side two">SIDE</div>
+    <div class="t-side three">SIDE</div>
+     <div class="t-side four">SIDE</div>
+     <!-- <div class="base"></div> -->
+    </div>
+    
 </body>
 
 </html>
