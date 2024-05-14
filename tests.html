@@ -240,15 +240,17 @@
             }
         }
     </script>
-    <div class="about-box-first">   <section class="smile-box">
+    <div class="about-box-first">
+        <section class="smile-box">
 
-        <div class="smile">
-            <div class="smile-eyes">
-                <div class="smile-eye"></div>
-                <div class="smile-eye"></div>
+            <div class="smile">
+                <div class="smile-eyes">
+                    <div class="smile-eye"></div>
+                    <div class="smile-eye"></div>
+                </div>
             </div>
-        </div>
-    </section></div>
+        </section>
+    </div>
     <button onclick="box()">nmeow</button>
     </div>
     <style>
@@ -285,9 +287,8 @@
             border-radius: 50%;
             border: .2dvw solid rgb(255, 255, 255);
         }
-
     </style>
- 
+
 
     <style>
         .night-but {
@@ -299,8 +300,8 @@
             border: .2dvw solid rgba(225, 231, 243, 1);
             overflow: hidden;
             transition: all 1s ease;
-            background-color:  rgb(16, 24, 57);
-        }   
+            background-color: rgb(16, 24, 57);
+        }
 
         .but-open {
             transition: all 1s ease;
@@ -314,9 +315,9 @@
             border-radius: 14dvw;
             border-top: .3dvw solid rgba(240, 247, 253, 1);
             border-bottom: .3dvw solid rgba(160, 177, 200, 1);
-            background-color:rgba(225, 231, 243, 1);
+            background-color: rgba(225, 231, 243, 1);
             transition: transform .5s ease;
-            box-shadow: 0px 0px 1000px 0px rgba(0, 0, 0, 0.5); 
+            box-shadow: 0px 0px 1000px 0px rgba(0, 0, 0, 0.5);
             z-index: 10;
         }
 
@@ -325,20 +326,20 @@
             transform: translateX(15dvw);
         }
 
-        .slide-sun-open{
-        transition: all .5s ease;
+        .slide-sun-open {
+            transition: all .5s ease;
             margin-bottom: 25dvw;
         }
 
         .slide-sun {
-        transition: all .5s ease;
+            transition: all .5s ease;
             display: flex;
             align-items: center;
             justify-content: center;
             width: 5dvw;
             height: 5dvw;
             border-radius: 50%;
-            background-color:rgba(250, 204, 20, 1);
+            background-color: rgba(250, 204, 20, 1);
             transform: translate(-10dvw, 11dvw);
         }
 
@@ -350,7 +351,7 @@
             width: 5dvw;
             height: 5dvw;
             border-radius: 50%;
-            background-color:#d0d886;
+            background-color: #d0d886;
             transform: translate(3dvw, -2dvw);
         }
 
@@ -361,15 +362,15 @@
 
         .slide-moon-small {
             width: 2dvw;
-            height:2dvw    ;           
+            height: 2dvw;
             border-radius: 50%;
-            background-color:#d6dd97;
+            background-color: #d6dd97;
         }
 
         .slide-sun-small-1 {
             width: 2dvw;
-            height:2dvw;
- 
+            height: 2dvw;
+
         }
 
         .slide-moon-small-1 {
@@ -407,15 +408,189 @@
         let slideopen = false;
         function lightmode() {
             let slider = document.querySelector('.slider');
-                slider.classList.toggle('slide-open');
-                let but = document.querySelector('.night-but');
-                but.classList.toggle('but-open');
-                let slidesun = document.querySelector('.slide-sun');
-                slidesun.classList.toggle('slide-sun-open');
-                let slidemoon = document.querySelector('.slide-moon');
-                slidemoon.classList.toggle('slide-moon-open');
+            slider.classList.toggle('slide-open');
+            let but = document.querySelector('.night-but');
+            but.classList.toggle('but-open');
+            let slidesun = document.querySelector('.slide-sun');
+            slidesun.classList.toggle('slide-sun-open');
+            let slidemoon = document.querySelector('.slide-moon');
+            slidemoon.classList.toggle('slide-moon-open');
         }
     </script>
+
+
+    <style>
+        .square-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 10dvw;
+            height: 10dvw;
+            margin-top: 10dvw;
+        }
+
+        .box-line {
+            width: 12.1dvw;
+            height: .1dvw;
+            background-color: white;
+            z-index: 9;
+        }
+
+        .box-line-one {
+            position: absolute;
+            transform: rotate(-45deg);
+        }
+
+        .box-line-two {
+            position: absolute;
+            transform: rotate(45deg);
+        }
+
+        .box-inner-box {
+            overflow: hidden;
+            transition: all 2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 5dvw;
+            height: 5dvw;
+            border: .1dvw solid rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+            z-index: 10;
+        }
+
+        .box-inner-circle {
+            transition: all 2s ease;
+            position: absolute;
+            width: 3dvw;
+            height: 3dvw;
+            border: .1dvw solid rgb(255, 255, 255);
+            border-radius: 50%;
+        }
+
+        .box-inner-circle-mid {
+            transition: all 2s ease;
+            position: absolute;
+            width: 3dvw;
+            height: 3dvw;
+            border: .1dvw solid rgb(255, 255, 255);
+            border-radius: 50%;
+        }
+
+        .box-inner-circle-end {
+            transition: all 2s ease;
+            position: absolute;
+            width: 3dvw;
+            height: 3dvw;
+            border: .1dvw solid rgb(255, 255, 255);
+            border-radius: 50%;
+        }
+
+        /* standard^^ */
+
+        .square-container:hover .box-inner-circle {
+            transition: all 2s ease;
+            width: 4dvw;
+            height: 4dvw;
+        }
+
+        .square-container:hover .box-inner-circle-mid {
+            transition: all 2s ease;
+            width: 8dvw;
+            height: 8dvw;
+        }
+
+        .square-container:hover .box-inner-circle-end {
+            transition: all 2s ease;
+            width: 12dvw;
+            height: 12dvw;
+        }
+
+        .square-container:hover .box-inner-box {
+            transition: all 2s ease;
+            width: 2dvw;
+            height: 2dvw;
+            background-color: rgba(255, 255, 255, 0);
+        }
+    </style>
+
+
+    <div class="square-container">
+        <div class="box-line box-line-one"></div>
+        <div class="box-line box-line-two">
+
+        </div>
+        <div class="box-inner-box">
+            <div class="box-inner-circle"></div>
+            <div class="box-inner-circle-mid"></div>
+            <div class="box-inner-circle-end"></div>
+        </div>
+    </div>
+
+    <style>
+        .cube {
+            transition: all 2s ease;
+            margin-top: 30dvw;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            transform-style: preserve-3d;
+        }
+
+        .side {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: rgba(0, 0, 0, 0.599);
+            border: 1px solid #ffffff;
+        }
+
+        .front {
+            transform: translateZ(50px);
+        }
+
+        .back {
+            transform: translateZ(-50px) rotateY(180deg);
+        }
+
+        .right {
+            transform: rotateY(90deg) translateX(50px);
+            transform-origin: top right;
+        }
+
+        .left {
+            transform: rotateY(-90deg) translateX(-50px);
+            transform-origin: top left;
+        }
+
+        .top {
+            transform: rotateX(90deg) translateY(-50px);
+            transform-origin: top center;
+        }
+
+        .bottom {
+            transform: rotateX(-90deg) translateY(50px);
+            transform-origin: bottom center;
+        }
+
+        .cube:hover {
+            transition: all 2s ease;
+            transform: translateZ(-100px) rotateX(-120deg) rotateZ(135deg);
+        }
+
+    
+    </style>
+    <div class="cube">
+        <div class="side front"></div>
+        <div class="side back"></div>
+        <div class="side right"></div>
+        <div class="side left"></div>
+        <div class="side top"></div>
+        <div class="side bottom"></div>
+    </div>
 
 </body>
 
